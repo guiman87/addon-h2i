@@ -1,0 +1,8 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  amd64: "bybetas/h2i:latest"
+labels:
+  org.opencontainers.image.title: "Home Assistant H2I Addon"
+  org.opencontainers.image.description: "A local service to convert HTML to images."
+  org.opencontainers.image.source: "https://github.com/guiman87/addon-h2i"
+  org.opencontainers.image.licenses: "Apache License 2.0"
