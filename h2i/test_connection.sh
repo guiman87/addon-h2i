@@ -46,24 +46,3 @@ else
 fi
 
 echo "Local IP: $IP_ADDRESS"
-
-# Try with wget if available
-if command -v wget >/dev/null 2>&1; then
-    echo "Testing with wget..."
-    TEMP_FILE=$(mktemp)
-    echo '{"html": "<html><body><h1>Test Connection</h1></body></html>"}' > $TEMP_FILE
-    wget --header="Content-Type: application/json" \
-      --post-file=$TEMP_FILE \
-      -O test_network.jpg \
-      http://$IP_ADDRESS:80/ || echo "Failed to use wget for POST request"
-    rm $TEMP_FILE
-    
-    if [ -f "test_network.jpg" ]; then
-      echo "Network test successful! Image was created."
-      ls -la test_network.jpg
-    else
-      echo "Network test failed to create the image."
-    fi
-else
-    echo "wget not available for network test."
-fi
