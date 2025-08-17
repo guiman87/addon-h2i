@@ -1,0 +1,2098 @@
+2025-07-27 01:29:42,785 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-07-28 01:29:42,794 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-07-28 12:30:41,836 DEBG 'nginx' stdout output:
+172.30.32.1 - - [28/Jul/2025:12:30:41 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-28 12:31:52,147 DEBG 'nginx' stdout output:
+172.30.32.1 - - [28/Jul/2025:12:31:52 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-29 01:29:42,799 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-07-29 14:11:13,753 DEBG 'nginx' stdout output:
+172.30.32.1 - - [29/Jul/2025:14:11:13 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-29 14:11:24,502 DEBG 'nginx' stdout output:
+172.30.32.1 - - [29/Jul/2025:14:11:24 -0300] "POST /webhook/4c3f3637-1a4b-477f-95ce-882e5aab6986/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-29 14:11:24,554 DEBG 'n8n' stdout output:
+node execution output incorrect data
+Error: node execution output incorrect data
+    at WorkflowExecute.runNode (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1219:6)
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1581:27
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:2157:11
+
+
+2025-07-29 14:11:27,596 DEBG 'n8n' stdout output:
+node execution output incorrect data
+Error: node execution output incorrect data
+    at WorkflowExecute.runNode (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1219:6)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1581:27
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_openai@5.8.1_ws@8.17.1_zod@3.25.67_/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:2157:11
+
+
+2025-07-30 01:29:42,806 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-07-30 21:16:21,888 WARN received SIGTERM indicating exit request
+2025-07-30 21:16:21,888 DEBG killing nginx (pid 9) with signal SIGTERM
+2025-07-30 21:16:21,889 INFO waiting for n8n, nginx to die
+2025-07-30 21:16:21,889 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 139815794565120 for <Subprocess at 139815794559696 with name nginx in state STOPPING> (stderr)>
+2025-07-30 21:16:21,890 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139815804964208 for <Subprocess at 139815794559696 with name nginx in state STOPPING> (stdout)>
+2025-07-30 21:16:21,890 WARN stopped: nginx (terminated by SIGTERM)
+2025-07-30 21:16:21,890 DEBG received SIGCHLD indicating a child quit
+2025-07-30 21:16:21,891 DEBG killing n8n (pid 8) with signal SIGTERM
+2025-07-30 21:16:21,893 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-07-30 21:16:21,904 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-07-30 21:16:21,915 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-07-30 21:16:21,942 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-07-30 21:16:21,967 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 139815817620384 for <Subprocess at 139815794406848 with name n8n in state STOPPING> (stdout)>
+2025-07-30 21:16:21,967 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 139815802798832 for <Subprocess at 139815794406848 with name n8n in state STOPPING> (stderr)>
+2025-07-30 21:16:21,967 INFO stopped: n8n (exit status 0)
+2025-07-30 21:16:21,967 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-07-30 21:16:31,546 INFO Set uid to user 0 succeeded
+2025-07-30 21:16:31,549 INFO supervisord started with pid 7
+2025-07-30 21:16:32,556 INFO spawned: 'n8n' with pid 8
+2025-07-30 21:16:32,557 INFO spawned: 'nginx' with pid 9
+2025-07-30 21:16:32,584 DEBG 'nginx' stdout output:
+2025/07/30 21:16:32 [notice] 13#13: using the "epoll" event method
+2025/07/30 21:16:32 [notice] 13#13: nginx/1.28.0
+2025/07/30 21:16:32 [notice] 13#13: OS: Linux 6.12.35-haos
+2025/07/30 21:16:32 [notice] 13#13: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-07-30 21:16:32,586 DEBG 'nginx' stdout output:
+2025/07/30 21:16:32 [notice] 13#13: start worker processes
+
+2025-07-30 21:16:32,586 DEBG 'nginx' stdout output:
+2025/07/30 21:16:32 [notice] 13#13: start worker process 18
+
+2025-07-30 21:16:32,590 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-07-30 21:16:32,591 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-07-30 21:16:32,591 DEBG 'n8n' stdout output:
+N8N_USER_FOLDER: /data/n8n
+
+2025-07-30 21:16:32,597 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.07.2","homeassistant":"2025.7.3","hassos":"16.0","docker":"28.3.0","hostname":"homeassistant","operating_system":"Home Assistant OS 16.0","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-07-30 21:16:32,605 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/media","/config/www"],"allowlist_external_urls":[],"components":["event","input_boolean","history","webostv","androidtv_remote","generic","generic.camera","file_upload","device_tracker","hassio.binary_sensor","hacs.switch","cast.media_player","counter","mobile_app.device_tracker","met.weather","media_source","tplink","remote","input_button","tuya.switch","mjpeg","tasmota.cover","cloud.stt","mjpeg.camera","ipp.sensor","assist_pipeline","ping.device_tracker","stt","image_upload","device_automation","tuya.sensor","frontend","python_script","cover","cloud","weather","input_datetime","met","tasmota.sensor","ffmpeg","script","tuya.light","androidtv_remote.remote","default_config","select","system_health","stream","conversation","homeassistant","bluetooth","switch","media_player","cloud.tts","logger","energy","mqtt.sensor","google_translate.tts","fan","schedule","tts","mqtt","upnp.sensor","network","ps4.media_player","backup","webostv.notify","hassio.sensor","sun","tuya","tuya.alarm_control_panel","vacuum","tuya.climate","tuya.number","siren","onboarding","upnp","climate","notify","radio_browser","logbook","mobile_app.sensor","upnp.binary_sensor","webhook","trace","switch_as_x.light","tuya.event","blueprint","hassio","binary_sensor","template.sensor","sun.binary_sensor","androidtv_remote.media_player","generic_thermostat.climate","tuya.camera","automation","go2rtc","homeassistant.scene","tuya.select","backup.event","search","sensor","mqtt.switch","hardware","tasmota","input_number","ping.binary_sensor","wyoming","assist_satellite","recorder","tuya.humidifier","tasmota.switch","button","backup.sensor","tuya.vacuum","sun.sensor","tasmota.fan","localtuya.switch","tag","ping","tuya.siren","repairs","webostv.media_player","tuya.cover","config","alarm_control_panel","update","scene","tuya.binary_sensor","system_log","diagnostics","mobile_app","analytics","usb","light","input_text","hacs.update","mobile_app.notify","tuya.fan","humidifier","tuya.scene","ssdp","application_credentials","hassio.update","wake_word","my","persistent_notification","auth","lovelace","tuya.button","websocket_api","homeassistant_alerts","localtuya","ollama","tasmota.binary_sensor","input_select","intent","number","hacs","dhcp","ipp","switch_as_x","zone","mobile_app.binary_sensor","energy.sensor","generic_thermostat","tasmota.light","timer","api","template","ps4","ping.sensor","cloud.binary_sensor","person","camera","rest_command","zeroconf","http","cast"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.7.3","whitelist_external_dirs":["/media","/config/www"]}
+
+2025-07-30 21:16:32,612 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\nFollow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list: []\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.6","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.6","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-07-30 21:16:32,617 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-07-30 21:16:32,627 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-07-30 21:16:32,633 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-07-30 21:16:32,633 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-07-30 21:16:33,196 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-07-30 21:16:34,197 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-07-30 21:16:34,197 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-07-30 21:16:35,678 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-07-30 21:16:36,044 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-07-30 21:16:36,084 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-07-30 21:16:36,160 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init because renewal is not due yet or cert is not initialized
+
+2025-07-30 21:16:37,983 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (_mYQi52r4SakLrhkWxr5u) 
+
+2025-07-30 21:16:38,165 DEBG 'n8n' stdout output:
+Version: 1.104.1
+
+2025-07-30 21:16:38,277 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-07-30 21:16:39,487 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-07-30 21:16:40,115 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-07-30 21:16:40,118 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-07-31 08:01:56,002 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:08:01:56 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 10:17:45,972 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:10:17:45 -0300] "POST /webhook/4c3f3637-1a4b-477f-95ce-882e5aab6986/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 10:17:46,015 DEBG 'n8n' stdout output:
+node execution output incorrect data
+Error: node execution output incorrect data
+    at WorkflowExecute.runNode (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1219:6)
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1581:27
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:2157:11
+
+
+2025-07-31 10:17:48,375 DEBG 'n8n' stdout output:
+node execution output incorrect data
+Error: node execution output incorrect data
+    at WorkflowExecute.runNode (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1219:6)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:1581:27
+    at /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/src/execution-engine/workflow-execute.ts:2157:11
+
+
+2025-07-31 11:37:32,496 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:11:37:32 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 11:37:32,763 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:11:37:32 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 11:37:33,308 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:11:37:33 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 11:37:33,603 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:11:37:33 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 11:37:33,821 DEBG 'nginx' stdout output:
+172.30.32.1 - - [31/Jul/2025:11:37:33 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 360 "-" "-"
+
+2025-07-31 21:16:37,124 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-01 21:16:37,134 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-01 22:46:37,410 WARN received SIGTERM indicating exit request
+2025-08-01 22:46:37,410 DEBG killing nginx (pid 9) with signal SIGTERM
+2025-08-01 22:46:37,410 INFO waiting for n8n, nginx to die
+2025-08-01 22:46:37,411 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 139766613564864 for <Subprocess at 139766613559296 with name nginx in state STOPPING> (stderr)>
+2025-08-01 22:46:37,411 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139766618161280 for <Subprocess at 139766613559296 with name nginx in state STOPPING> (stdout)>
+2025-08-01 22:46:37,412 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-01 22:46:37,412 DEBG received SIGCHLD indicating a child quit
+2025-08-01 22:46:37,412 DEBG killing n8n (pid 8) with signal SIGTERM
+2025-08-01 22:46:37,415 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-01 22:46:37,529 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-01 22:46:37,532 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-01 22:46:37,543 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-01 22:46:37,570 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 139766633898608 for <Subprocess at 139766616868960 with name n8n in state STOPPING> (stdout)>
+2025-08-01 22:46:37,570 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 139766615169248 for <Subprocess at 139766616868960 with name n8n in state STOPPING> (stderr)>
+2025-08-01 22:46:37,570 INFO stopped: n8n (exit status 0)
+2025-08-01 22:46:37,570 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-01 22:46:44,699 INFO Set uid to user 0 succeeded
+2025-08-01 22:46:44,702 INFO supervisord started with pid 7
+2025-08-01 22:46:45,710 INFO spawned: 'n8n' with pid 8
+2025-08-01 22:46:45,721 INFO spawned: 'nginx' with pid 9
+2025-08-01 22:46:45,802 DEBG 'nginx' stdout output:
+2025/08/01 22:46:45 [notice] 13#13: using the "epoll" event method
+2025/08/01 22:46:45 [notice] 13#13: nginx/1.28.0
+2025/08/01 22:46:45 [notice] 13#13: OS: Linux 6.12.35-haos
+2025/08/01 22:46:45 [notice] 13#13: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-01 22:46:45,805 DEBG 'nginx' stdout output:
+2025/08/01 22:46:45 [notice] 13#13: start worker processes
+2025/08/01 22:46:45 [notice] 13#13: start worker process 17
+
+2025-08-01 22:46:45,824 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-01 22:46:45,828 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-01 22:46:45,838 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.07.2","homeassistant":"2025.7.4","hassos":"16.0","docker":"28.3.0","hostname":"homeassistant","operating_system":"Home Assistant OS 16.0","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-01 22:46:45,857 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/media","/config/www"],"allowlist_external_urls":[],"components":["vacuum","ping.binary_sensor","zeroconf","lovelace","dhcp","hassio.update","mqtt","system_health","media_player","wake_word","mqtt.sensor","mobile_app.notify","webostv","http","input_text","system_log","update","met.weather","remote","tuya.scene","frontend","zone","camera","localtuya","tuya.camera","timer","sun.sensor","radio_browser","device_tracker","mobile_app.device_tracker","cast","hassio.sensor","homeassistant_alerts","mobile_app.binary_sensor","tuya.siren","assist_pipeline","stt","tasmota.fan","script","tuya.climate","backup.sensor","automation","ipp.sensor","ping","cloud.stt","webostv.media_player","device_automation","ps4.media_player","file_upload","conversation","hacs.update","tasmota.cover","ssdp","ollama","upnp","hacs","androidtv_remote.media_player","sensor","application_credentials","binary_sensor","trace","androidtv_remote.remote","google_translate.tts","tuya.fan","webhook","cloud.binary_sensor","blueprint","generic_thermostat","tuya.humidifier","ping.sensor","hassio","homeassistant","input_boolean","go2rtc","template.sensor","search","tasmota.sensor","tuya.select","notify","person","repairs","switch_as_x.light","button","webostv.notify","tuya.alarm_control_panel","cloud.tts","media_source","tasmota.switch","template","ping.device_tracker","tuya.button","logbook","ps4","number","sun.binary_sensor","cast.media_player","api","schedule","scene","ffmpeg","switch_as_x","mjpeg","select","persistent_notification","light","tuya.event","history","onboarding","sun","generic.camera","tuya.light","switch","stream","input_number","tuya","climate","localtuya.switch","default_config","input_datetime","analytics","ollama.conversation","auth","upnp.binary_sensor","hacs.switch","generic","energy","python_script","cover","tuya.sensor","input_select","logger","tasmota","tts","websocket_api","tuya.switch","weather","input_button","hardware","backup","generic_thermostat.climate","my","humidifier","tasmota.light","backup.event","mjpeg.camera","tuya.binary_sensor","wyoming","tuya.cover","upnp.sensor","met","recorder","diagnostics","image_upload","alarm_control_panel","ipp","androidtv_remote","fan","tuya.vacuum","tag","counter","homeassistant.scene","tasmota.binary_sensor","network","config","tplink","event","assist_satellite","cloud","mobile_app.sensor","mobile_app","hassio.binary_sensor","bluetooth","mqtt.switch","tuya.number","siren","usb","rest_command","energy.sensor","intent"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.7.4","whitelist_external_dirs":["/media","/config/www"]}
+
+2025-08-01 22:46:45,952 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list: []\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.8","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.8","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-01 22:46:45,963 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-01 22:46:45,979 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-01 22:46:45,987 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-08-01 22:46:45,987 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-01 22:46:46,599 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-01 22:46:47,601 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-01 22:46:47,601 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-01 22:46:49,453 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-01 22:46:49,816 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-01 22:46:49,828 DEBG 'n8n' stdout output:
+Migrations in progress, please do NOT stop the process.
+
+2025-08-01 22:46:49,828 DEBG 'n8n' stdout output:
+Starting migration AddInputsOutputsToTestCaseExecution1752669793000
+
+2025-08-01 22:46:49,845 DEBG 'n8n' stdout output:
+Finished migration AddInputsOutputsToTestCaseExecution1752669793000
+
+2025-08-01 22:46:49,891 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-01 22:46:49,983 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-01 22:46:52,059 DEBG 'n8n' stdout output:
+Version: 1.105.1
+
+2025-08-01 22:46:52,143 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-01 22:46:52,148 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (6ik6ciXcrDDtOmgO1S-sV) 
+
+2025-08-01 22:46:53,442 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-01 22:46:54,075 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-01 22:46:54,076 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-01 23:32:32,222 DEBG 'n8n' stdout output:
+Problem with execution 254: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-01 23:32:32,223 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 254)
+
+2025-08-01 23:32:32,268 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 00:01:36,168 DEBG 'n8n' stdout output:
+Problem with execution 266: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 00:01:36,169 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 266)
+
+2025-08-02 00:01:36,186 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 00:01:45,742 DEBG 'n8n' stdout output:
+Problem with execution 267: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 00:01:45,743 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 267)
+
+2025-08-02 00:01:45,780 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 00:02:04,266 DEBG 'n8n' stdout output:
+Problem with execution 268: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 00:02:04,267 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 268)
+
+2025-08-02 00:02:04,297 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 20:41:04,378 DEBG 'n8n' stdout output:
+Problem with execution 354: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 20:41:04,379 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 354)
+
+2025-08-02 20:41:04,411 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 20:42:12,476 DEBG 'n8n' stdout output:
+Problem with execution 355: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 20:42:12,477 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 355)
+
+2025-08-02 20:42:12,510 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 20:42:22,742 DEBG 'n8n' stdout output:
+Problem with execution 356: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 20:42:22,743 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 356)
+
+2025-08-02 20:42:22,766 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 21:15:51,587 DEBG 'n8n' stdout output:
+Problem with execution 367: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 21:15:51,587 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 367)
+
+2025-08-02 21:15:51,605 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 22:46:50,929 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-02 23:31:55,072 DEBG 'n8n' stdout output:
+Problem with execution 371: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 23:31:55,072 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 371)
+
+2025-08-02 23:31:55,090 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-02 23:31:59,644 DEBG 'n8n' stdout output:
+Problem with execution 372: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-02 23:31:59,644 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 372)
+
+2025-08-02 23:31:59,668 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-03 13:56:00,285 DEBG 'n8n' stdout output:
+Problem with execution 458: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-03 13:56:00,286 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 458)
+
+2025-08-03 13:56:00,310 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-03 13:56:09,518 DEBG 'n8n' stdout output:
+Problem with execution 459: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-03 13:56:09,519 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 459)
+
+2025-08-03 13:56:09,541 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-03 13:56:24,181 DEBG 'n8n' stdout output:
+Problem with execution 460: The workflow has issues and cannot be executed for that reason. Please fix them first.. Aborting.
+
+2025-08-03 13:56:24,182 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first. (execution 460)
+
+2025-08-03 13:56:24,205 DEBG 'n8n' stdout output:
+The workflow has issues and cannot be executed for that reason. Please fix them first.
+
+2025-08-03 22:46:50,949 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-04 22:46:50,955 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-05 20:27:55,679 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-05 20:45:26,778 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-05 22:46:50,961 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-06 22:46:50,968 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-07 03:22:02,340 WARN received SIGTERM indicating exit request
+2025-08-07 03:22:02,341 DEBG killing nginx (pid 9) with signal SIGTERM
+2025-08-07 03:22:02,341 INFO waiting for n8n, nginx to die
+2025-08-07 03:22:02,342 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 140503686880512 for <Subprocess at 140503686874752 with name nginx in state STOPPING> (stderr)>
+2025-08-07 03:22:02,342 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140503689009040 for <Subprocess at 140503686874752 with name nginx in state STOPPING> (stdout)>
+2025-08-07 03:22:02,343 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-07 03:22:02,343 DEBG received SIGCHLD indicating a child quit
+2025-08-07 03:22:02,343 DEBG killing n8n (pid 8) with signal SIGTERM
+2025-08-07 03:22:02,346 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-07 03:22:02,436 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-07 03:22:02,439 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-07 03:22:02,449 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-07 03:22:02,474 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140503688601264 for <Subprocess at 140503686721952 with name n8n in state STOPPING> (stdout)>
+2025-08-07 03:22:02,475 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140503690301600 for <Subprocess at 140503686721952 with name n8n in state STOPPING> (stderr)>
+2025-08-07 03:22:02,475 INFO stopped: n8n (exit status 0)
+2025-08-07 03:22:02,475 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-07 03:22:12,665 INFO Set uid to user 0 succeeded
+2025-08-07 03:22:12,668 INFO supervisord started with pid 8
+2025-08-07 03:22:13,674 INFO spawned: 'n8n' with pid 9
+2025-08-07 03:22:13,678 INFO spawned: 'nginx' with pid 10
+2025-08-07 03:22:13,710 DEBG 'nginx' stdout output:
+2025/08/07 03:22:13 [notice] 15#15: using the "epoll" event method
+2025/08/07 03:22:13 [notice] 15#15: nginx/1.28.0
+2025/08/07 03:22:13 [notice] 15#15: OS: Linux 6.12.35-haos
+2025/08/07 03:22:13 [notice] 15#15: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-07 03:22:13,712 DEBG 'nginx' stdout output:
+2025/08/07 03:22:13 [notice] 15#15: start worker processes
+2025/08/07 03:22:13 [notice] 15#15: start worker process 19
+
+2025-08-07 03:22:13,714 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-07 03:22:13,715 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-07 03:22:13,715 DEBG 'n8n' stdout output:
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-07 03:22:13,721 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.07.3","homeassistant":"2025.7.4","hassos":"16.0","docker":"28.3.0","hostname":"homeassistant","operating_system":"Home Assistant OS 16.0","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-07 03:22:13,729 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/media","/config/www"],"allowlist_external_urls":[],"components":["vacuum","ping.binary_sensor","zeroconf","lovelace","dhcp","hassio.update","mqtt","system_health","media_player","wake_word","mqtt.sensor","mobile_app.notify","webostv","http","input_text","system_log","update","met.weather","remote","tuya.scene","frontend","zone","camera","localtuya","tuya.camera","timer","sun.sensor","radio_browser","device_tracker","mobile_app.device_tracker","cast","hassio.sensor","homeassistant_alerts","mobile_app.binary_sensor","tuya.siren","assist_pipeline","stt","tasmota.fan","script","tuya.climate","backup.sensor","automation","ipp.sensor","ping","cloud.stt","webostv.media_player","device_automation","ps4.media_player","file_upload","conversation","hacs.update","tasmota.cover","ssdp","ollama","upnp","hacs","androidtv_remote.media_player","sensor","application_credentials","binary_sensor","trace","androidtv_remote.remote","google_translate.tts","tuya.fan","webhook","cloud.binary_sensor","blueprint","generic_thermostat","tuya.humidifier","ping.sensor","hassio","homeassistant","input_boolean","go2rtc","template.sensor","search","tasmota.sensor","tuya.select","notify","person","repairs","switch_as_x.light","button","webostv.notify","tuya.alarm_control_panel","cloud.tts","media_source","tasmota.switch","template","ping.device_tracker","tuya.button","logbook","ps4","number","sun.binary_sensor","cast.media_player","api","schedule","scene","ffmpeg","switch_as_x","mjpeg","select","persistent_notification","light","tuya.event","history","onboarding","sun","generic.camera","tuya.light","switch","stream","input_number","tuya","climate","localtuya.switch","default_config","input_datetime","analytics","ollama.conversation","auth","upnp.binary_sensor","hacs.switch","generic","energy","python_script","cover","tuya.sensor","input_select","logger","tasmota","tts","websocket_api","tuya.switch","weather","input_button","hardware","backup","generic_thermostat.climate","my","humidifier","tasmota.light","backup.event","mjpeg.camera","tuya.binary_sensor","wyoming","tuya.cover","upnp.sensor","met","recorder","diagnostics","image_upload","alarm_control_panel","ipp","androidtv_remote","fan","tuya.vacuum","tag","counter","homeassistant.scene","tasmota.binary_sensor","network","config","tplink","event","assist_satellite","cloud","mobile_app.sensor","mobile_app","hassio.binary_sensor","bluetooth","mqtt.switch","tuya.number","siren","usb","rest_command","energy.sensor","intent"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.7.4","whitelist_external_dirs":["/media","/config/www"]}
+
+2025-08-07 03:22:13,736 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list:\n  - \"WEBHOOK_URL: <value here>\"\n  - \"EXTERNAL_URL: <value here>\"\n  - \"OTHER_ENVIRONMENT_VARIABLE_OF_YOUR_CHOICE: <value here>\"\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.10","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.10","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-07 03:22:13,741 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-07 03:22:13,750 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-07 03:22:13,757 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-08-07 03:22:13,757 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-07 03:22:14,335 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-07 03:22:15,336 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-07 03:22:15,336 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-07 03:22:17,182 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-07 03:22:17,544 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-07 03:22:17,584 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-07 03:22:17,682 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-07 03:22:19,778 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (qSggnNcLHYflKZknwctg-) 
+
+2025-08-07 03:22:19,835 DEBG 'n8n' stdout output:
+Version: 1.105.3
+
+2025-08-07 03:22:19,906 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-07 03:22:21,233 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-07 03:22:21,917 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-07 03:22:21,919 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-07 15:24:29,594 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-07 15:24:57,333 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-08 03:22:18,595 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-08 20:11:00,168 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 01:03:44,927 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 03:22:18,599 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-09 03:22:54,636 WARN received SIGTERM indicating exit request
+2025-08-09 03:22:54,636 DEBG killing nginx (pid 10) with signal SIGTERM
+2025-08-09 03:22:54,637 INFO waiting for n8n, nginx to die
+2025-08-09 03:22:54,637 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 140204356394240 for <Subprocess at 140204356388480 with name nginx in state STOPPING> (stderr)>
+2025-08-09 03:22:54,638 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140204358522768 for <Subprocess at 140204356388480 with name nginx in state STOPPING> (stdout)>
+2025-08-09 03:22:54,638 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-09 03:22:54,638 DEBG received SIGCHLD indicating a child quit
+2025-08-09 03:22:54,639 DEBG killing n8n (pid 9) with signal SIGTERM
+2025-08-09 03:22:54,641 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-09 03:22:54,643 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 03:22:54,696 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 03:22:54,699 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-09 03:22:54,702 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-09 03:22:54,712 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-09 03:22:54,744 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140204358114992 for <Subprocess at 140204356235680 with name n8n in state STOPPING> (stdout)>
+2025-08-09 03:22:54,744 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140204359815328 for <Subprocess at 140204356235680 with name n8n in state STOPPING> (stderr)>
+2025-08-09 03:22:54,744 INFO stopped: n8n (exit status 0)
+2025-08-09 03:22:54,744 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-09 03:23:06,967 INFO Set uid to user 0 succeeded
+2025-08-09 03:23:06,970 INFO supervisord started with pid 6
+2025-08-09 03:23:07,975 INFO spawned: 'n8n' with pid 7
+2025-08-09 03:23:07,978 INFO spawned: 'nginx' with pid 8
+2025-08-09 03:23:08,005 DEBG 'nginx' stdout output:
+2025/08/09 03:23:07 [notice] 12#12: using the "epoll" event method
+2025/08/09 03:23:07 [notice] 12#12: nginx/1.28.0
+2025/08/09 03:23:07 [notice] 12#12: OS: Linux 6.12.35-haos
+2025/08/09 03:23:07 [notice] 12#12: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-09 03:23:08,007 DEBG 'nginx' stdout output:
+2025/08/09 03:23:07 [notice] 12#12: start worker processes
+
+2025-08-09 03:23:08,007 DEBG 'nginx' stdout output:
+2025/08/09 03:23:07 [notice] 12#12: start worker process 16
+
+2025-08-09 03:23:08,015 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-09 03:23:08,017 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-09 03:23:08,017 DEBG 'n8n' stdout output:
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-09 03:23:08,025 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.07.3","homeassistant":"2025.7.4","hassos":"16.0","docker":"28.3.0","hostname":"homeassistant","operating_system":"Home Assistant OS 16.0","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-09 03:23:08,034 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/media","/config/www"],"allowlist_external_urls":[],"components":["vacuum","ping.binary_sensor","zeroconf","lovelace","dhcp","hassio.update","mqtt","system_health","media_player","wake_word","mqtt.sensor","mobile_app.notify","webostv","http","input_text","system_log","update","met.weather","tplink.vacuum","remote","tuya.scene","frontend","zone","camera","tplink.sensor","localtuya","tuya.camera","timer","sun.sensor","radio_browser","device_tracker","mobile_app.device_tracker","cast","hassio.sensor","homeassistant_alerts","mobile_app.binary_sensor","tuya.siren","assist_pipeline","stt","tasmota.fan","script","tuya.climate","backup.sensor","automation","tplink.switch","ipp.sensor","ping","cloud.stt","webostv.media_player","device_automation","ps4.media_player","file_upload","conversation","tplink.climate","tplink.number","hacs.update","tasmota.cover","ssdp","ollama","upnp","hacs","androidtv_remote.media_player","sensor","application_credentials","tplink.fan","binary_sensor","trace","androidtv_remote.remote","google_translate.tts","tuya.fan","webhook","cloud.binary_sensor","blueprint","generic_thermostat","tuya.humidifier","ping.sensor","hassio","homeassistant","input_boolean","go2rtc","template.sensor","search","tasmota.sensor","tuya.select","tplink.select","notify","person","repairs","switch_as_x.light","button","webostv.notify","tuya.alarm_control_panel","cloud.tts","media_source","tasmota.switch","template","ping.device_tracker","tuya.button","logbook","ps4","number","sun.binary_sensor","cast.media_player","api","schedule","scene","ffmpeg","switch_as_x","mjpeg","select","persistent_notification","light","tuya.event","history","onboarding","sun","generic.camera","tuya.light","switch","tplink.camera","stream","input_number","tuya","climate","localtuya.switch","default_config","tplink.light","tplink.binary_sensor","input_datetime","analytics","ollama.conversation","auth","upnp.binary_sensor","hacs.switch","generic","energy","python_script","cover","tuya.sensor","input_select","logger","tasmota","tts","websocket_api","tuya.switch","weather","input_button","hardware","tplink.siren","backup","generic_thermostat.climate","my","humidifier","tasmota.light","backup.event","mjpeg.camera","tuya.binary_sensor","wyoming","tuya.cover","upnp.sensor","met","recorder","diagnostics","image_upload","alarm_control_panel","ipp","androidtv_remote","fan","tuya.vacuum","tplink.button","tag","counter","homeassistant.scene","tasmota.binary_sensor","network","config","tplink","event","assist_satellite","cloud","mobile_app.sensor","mobile_app","hassio.binary_sensor","bluetooth","mqtt.switch","tuya.number","siren","usb","rest_command","energy.sensor","intent"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.7.4","whitelist_external_dirs":["/media","/config/www"]}
+
+2025-08-09 03:23:08,042 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list:\n  - \"WEBHOOK_URL: <value here>\"\n  - \"EXTERNAL_URL: <value here>\"\n  - \"OTHER_ENVIRONMENT_VARIABLE_OF_YOUR_CHOICE: <value here>\"\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.11","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.11","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-09 03:23:08,047 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-09 03:23:08,058 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-09 03:23:08,065 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-08-09 03:23:08,065 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-09 03:23:08,652 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-09 03:23:09,653 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-09 03:23:09,653 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-09 03:23:11,456 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-09 03:23:11,833 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-09 03:23:11,872 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-09 03:23:11,967 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-09 03:23:14,153 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (WPSzAgQEUSDqjf7FFx2Ti) 
+
+2025-08-09 03:23:14,309 DEBG 'n8n' stdout output:
+Version: 1.105.4
+
+2025-08-09 03:23:14,380 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-09 03:23:15,618 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-09 03:23:16,214 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-09 03:23:16,637 DEBG 'n8n' stdout output:
+Activated workflow "Youtube Analyzer" (ID: OsOabtEzjFoEL091)
+
+2025-08-09 03:23:16,650 DEBG 'n8n' stdout output:
+Activated workflow "Channel Dog" (ID: BPox329nF76VCcJo)
+
+2025-08-09 03:23:16,651 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-09 10:57:44,506 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 11:01:43,559 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 11:05:30,500 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 11:12:04,503 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 11:29:46,132 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:29:46 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-09 11:29:46,342 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:29:46 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-09 11:29:48,559 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:29:48 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-09 11:29:52,789 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:29:52 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-09 11:30:00,997 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:30:00 -0300] "POST /webhook/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-09 11:30:11,016 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-09 11:30:40,721 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:30:40 -0300] "POST /webhook-test/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-09 11:32:36,506 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:32:36 -0300] "POST /webhook-test/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-09 11:38:15,281 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:38:15 -0300] "POST /webhook-test/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-09 11:44:43,615 DEBG 'nginx' stdout output:
+172.30.32.1 - - [09/Aug/2025:11:44:43 -0300] "POST /webhook-test/f53e27da-2bee-451e-81b2-24b66bc647e2/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-09 12:02:42,904 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 03:23:13,007 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-10 10:49:07,616 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 10:52:17,921 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:01:09,621 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:07:41,101 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:08:05,431 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:08:29,208 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:23:38,331 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:26:10,090 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:26:14,411 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:27:02,878 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:27:29,988 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 11:38:43,544 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:38:59,824 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:39:25,938 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:42:58,052 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:43:12,047 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:43:33,824 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:45:58,268 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:45:58 -0300] "GET /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 500 148 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+
+2025-08-10 11:45:58,272 DEBG 'n8n' stderr output:
+ResponseError: The requested webhook "GET a87de2ab-c620-480a-803a-8566009a7b9e/webhook" is not registered.
+    at LiveWebhooks.findWebhook (/usr/local/lib/node_modules/n8n/src/webhooks/live-webhooks.ts:169:10)
+    at LiveWebhooks.findAccessControlOptions (/usr/local/lib/node_modules/n8n/src/webhooks/live-webhooks.ts:45:19)
+    at WebhookRequestHandler.setupCorsHeaders (/usr/local/lib/node_modules/n8n/src/webhooks/webhook-request-handler.ts:196:20)
+    at WebhookRequestHandler.handleRequest (/usr/local/lib/node_modules/n8n/src/webhooks/webhook-request-handler.ts:55:27)
+    at /usr/local/lib/node_modules/n8n/src/webhooks/webhook-request-handler.ts:237:3
+
+2025-08-10 11:46:10,843 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:46:23,233 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:47:57,444 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 11:51:31,465 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:51:31 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 11:51:31,691 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:51:31 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 11:51:31,921 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:51:31 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 11:52:10,627 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:52:10 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 11:52:10,938 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:11:52:10 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:05:05,198 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:05:05 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:06:39,434 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:06:39 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:18:01,171 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:18:01 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:21:36,692 DEBG 'n8n' stdout output:
+Problem with execution 761: Could not find a node named "Edit Fields" in the workflow.. Aborting.
+
+2025-08-10 12:21:36,695 DEBG 'n8n' stdout output:
+Could not find a node named "Edit Fields" in the workflow. (execution 761)
+
+2025-08-10 12:21:36,713 DEBG 'n8n' stdout output:
+Could not find a node named "Edit Fields" in the workflow.
+
+2025-08-10 12:22:38,041 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:22:38 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:23:12,271 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:23:12 -0300] "POST /webhook-test/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:24:26,886 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 12:25:27,517 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:12:25:27 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 12:27:47,270 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 12:33:44,186 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 13:05:44,616 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 13:06:16,504 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:13:06:16 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 14:53:08,163 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:14:53:08 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 20:01:32,280 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-10 20:11:48,636 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-langchain.agent
+
+2025-08-10 20:12:12,042 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 20:12:44,739 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 20:13:17,167 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-10 21:06:44,819 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:06:44 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:13:27,782 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:13:27 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:13:40,504 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:13:40 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:23:55,386 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:23:55 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:30:03,668 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:30:03 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:53:49,097 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:53:49 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 21:55:58,020 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:21:55:58 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 22:27:20,052 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:22:27:20 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 23:29:05,369 DEBG 'n8n' stdout output:
+Your request is invalid or could not be processed by the service
+
+2025-08-10 23:29:30,461 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:23:29:30 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 23:34:55,258 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:23:34:55 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 23:35:33,144 DEBG 'nginx' stdout output:
+172.30.32.1 - - [10/Aug/2025:23:35:33 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-10 23:53:03,367 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-langchain.agent
+
+2025-08-10 23:53:41,126 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-langchain.agent
+
+2025-08-10 23:53:50,334 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-langchain.agent
+
+2025-08-11 00:27:05,921 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-langchain.agent
+
+2025-08-11 00:31:57,984 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:00:31:57 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 00:56:56,120 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:00:56:56 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:09:14,975 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:09:14 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:33:14,250 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-11 01:36:43,086 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:36:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:42:41,232 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:42:41 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:45:23,716 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:45:23 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:52:46,850 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:52:46 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:53:26,967 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:53:26 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:55:52,787 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:55:52 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 01:55:53,000 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:01:55:53 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:00:35,168 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:00:35 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:02:52,452 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:02:52 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:09:16,265 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:09:16 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:10:33,961 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:10:33 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:25:45,125 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:25:45 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:27:32,642 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:27:32 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 02:31:29,466 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:02:31:29 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:04:55,543 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:03:04:55 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:04:55,735 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:03:04:55 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:04:55,952 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:03:04:55 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:04:56,171 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:03:04:56 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:11:19,974 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:03:11:19 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 03:23:13,014 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-11 09:39:36,168 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:09:39:36 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 10:27:43,317 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:10:27:43 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 11:50:14,925 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:11:50:14 -0300] "POST /webhook-test/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 11:51:46,875 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-11 12:34:48,911 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:12:34:48 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 13:05:31,986 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:13:05:31 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 13:48:39,241 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:13:48:39 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 13:49:01,334 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:13:49:01 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 13:52:17,045 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:13:52:17 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 13:55:16,927 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:13:55:16 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 14:37:29,480 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:14:37:29 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-11 14:48:40,354 DEBG 'nginx' stdout output:
+172.30.32.1 - - [11/Aug/2025:14:48:40 -0300] "POST /webhook/763475c6-2b91-42aa-8a1f-ca2475eab305/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-12 03:23:13,020 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-12 08:24:42,123 DEBG 'nginx' stdout output:
+172.30.32.1 - - [12/Aug/2025:08:24:42 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-12 10:03:39,651 DEBG 'nginx' stdout output:
+172.30.32.1 - - [12/Aug/2025:10:03:39 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-12 10:05:31,987 DEBG 'nginx' stdout output:
+172.30.32.1 - - [12/Aug/2025:10:05:31 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-12 10:19:03,477 DEBG 'nginx' stdout output:
+172.30.32.1 - - [12/Aug/2025:10:19:03 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 03:23:13,026 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-13 07:10:27,631 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:07:10:27 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:16:11,201 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:16:11 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:23:36,130 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-13 23:24:00,310 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:24:00 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:38:37,614 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:41:42,826 WARN received SIGTERM indicating exit request
+2025-08-13 23:41:42,827 DEBG killing nginx (pid 8) with signal SIGTERM
+2025-08-13 23:41:42,827 INFO waiting for n8n, nginx to die
+2025-08-13 23:41:42,829 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 140163494288640 for <Subprocess at 140163494282880 with name nginx in state STOPPING> (stderr)>
+2025-08-13 23:41:42,830 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140163496417168 for <Subprocess at 140163494282880 with name nginx in state STOPPING> (stdout)>
+2025-08-13 23:41:42,830 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-13 23:41:42,831 DEBG received SIGCHLD indicating a child quit
+2025-08-13 23:41:42,831 DEBG killing n8n (pid 7) with signal SIGTERM
+2025-08-13 23:41:42,835 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-13 23:41:42,838 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-13 23:41:42,926 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-13 23:41:42,929 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-13 23:41:42,932 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-13 23:41:42,944 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-13 23:41:42,976 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140163496009392 for <Subprocess at 140163494130080 with name n8n in state STOPPING> (stdout)>
+2025-08-13 23:41:42,976 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140163497709728 for <Subprocess at 140163494130080 with name n8n in state STOPPING> (stderr)>
+2025-08-13 23:41:42,976 INFO stopped: n8n (exit status 0)
+2025-08-13 23:41:42,977 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-13 23:44:21,220 INFO Set uid to user 0 succeeded
+2025-08-13 23:44:21,228 INFO supervisord started with pid 7
+2025-08-13 23:44:22,234 INFO spawned: 'n8n' with pid 8
+2025-08-13 23:44:22,236 INFO spawned: 'nginx' with pid 9
+2025-08-13 23:44:22,305 DEBG 'nginx' stdout output:
+2025/08/13 23:44:22 [notice] 12#12: using the "epoll" event method
+2025/08/13 23:44:22 [notice] 12#12: nginx/1.28.0
+2025/08/13 23:44:22 [notice] 12#12: OS: Linux 6.12.41-haos
+2025/08/13 23:44:22 [notice] 12#12: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-13 23:44:22,316 DEBG 'nginx' stdout output:
+2025/08/13 23:44:22 [notice] 12#12: start worker processes
+2025/08/13 23:44:22 [notice] 12#12: start worker process 22
+
+2025-08-13 23:44:22,318 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-13 23:44:22,320 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-13 23:44:22,321 DEBG 'n8n' stdout output:
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-13 23:44:22,345 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.08.1","homeassistant":"2025.8.1","hassos":"16.1","docker":"28.3.3","hostname":"homeassistant","operating_system":"Home Assistant OS 16.1","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"startup","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-13 23:44:22,355 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/config/www","/media"],"allowlist_external_urls":[],"components":["tasmota.switch","tuya.sensor","ps4.media_player","input_boolean","hassio.binary_sensor","number","device_tracker","system_log","tuya.cover","weather","energy.sensor","schedule","sun","mqtt","input_datetime","localtuya","rest_command","my","dhcp","template.sensor","generic_thermostat.climate","tuya.binary_sensor","wake_word","system_health","blueprint","history","person","conversation","tuya.switch","hacs.switch","cloud","tplink.select","tuya.scene","hardware","upnp.binary_sensor","event","tasmota.binary_sensor","androidtv_remote","ollama","hassio.sensor","humidifier","radio_browser","androidtv_remote.remote","backup","tuya.button","sun.sensor","onboarding","file_upload","light","mobile_app","assist_pipeline","homeassistant.scene","frontend","tplink.switch","recorder","google_translate.tts","tplink","androidtv_remote.media_player","script","cloud.binary_sensor","mobile_app.notify","tuya.camera","generic.camera","tuya.event","input_select","device_automation","http","application_credentials","lovelace","repairs","input_button","tuya.number","template","tag","bluetooth","energy","tasmota","websocket_api","ping.device_tracker","siren","upnp","upnp.sensor","api","search","ipp.sensor","switch_as_x.light","tplink.climate","config","usb","webostv.notify","input_text","met","localtuya.switch","auth","cloud.tts","switch_as_x","tplink.vacuum","backup.sensor","ping.binary_sensor","vacuum","tplink.siren","ffmpeg","hassio.update","input_number","stream","tuya.humidifier","mjpeg.camera","media_source","fan","tasmota.sensor","remote","hassio","select","wyoming","tuya.light","homeassistant","webhook","camera","tplink.light","hacs","binary_sensor","switch","alarm_control_panel","tuya.select","diagnostics","zeroconf","hacs.update","media_player","persistent_notification","sun.binary_sensor","mqtt.switch","cloud.stt","tuya.siren","tplink.button","webostv.media_player","ssdp","zone","tuya.alarm_control_panel","webostv","analytics","ps4","met.weather","mqtt.sensor","ping","tplink.number","cast.media_player","timer","notify","mobile_app.binary_sensor","tuya.vacuum","logbook","intent","mobile_app.sensor","counter","stt","tasmota.light","trace","climate","tuya","ping.sensor","logger","image_upload","tplink.sensor","generic","tuya.fan","tplink.binary_sensor","ipp","generic_thermostat","network","tasmota.fan","mobile_app.device_tracker","tts","scene","automation","assist_satellite","backup.event","default_config","tplink.fan","tasmota.cover","python_script","homeassistant_alerts","button","update","sensor","tplink.camera","cast","mjpeg","cover","tuya.climate","go2rtc"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.8.1","whitelist_external_dirs":["/config/www","/media"]}
+
+2025-08-13 23:44:22,363 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list:\n  - \"WEBHOOK_URL: <value here>\"\n  - \"EXTERNAL_URL: <value here>\"\n  - \"OTHER_ENVIRONMENT_VARIABLE_OF_YOUR_CHOICE: <value here>\"\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.11","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.11","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-13 23:44:22,368 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-13 23:44:22,380 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-13 23:44:22,388 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-13 23:44:23,389 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-13 23:44:23,390 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-13 23:44:24,180 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-13 23:44:30,458 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-13 23:44:31,067 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-13 23:44:31,134 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-13 23:44:31,317 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-13 23:44:34,672 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (ji9padzK4dWE4Oad5_7iK) 
+
+2025-08-13 23:44:35,207 DEBG 'n8n' stdout output:
+Version: 1.105.4
+
+2025-08-13 23:44:35,306 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-13 23:44:38,103 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-13 23:44:41,094 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:44:41,096 DEBG 'n8n' stdout output:
+Issue on initial workflow activation try of "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh) (startup)
+
+2025-08-13 23:44:41,400 DEBG 'n8n' stdout output:
+Activated workflow "YA_ChannelDog" (ID: BPox329nF76VCcJo)
+
+2025-08-13 23:44:42,098 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:44:42,307 DEBG 'n8n' stdout output:
+Activated workflow "SolanaTrendingTokens" (ID: BJILgey6xyMQwcKM)
+
+2025-08-13 23:44:42,337 DEBG 'n8n' stdout output:
+Activated workflow "YA_DailyFetcher" (ID: xruk8XvWbDaTTnTS)
+
+2025-08-13 23:44:42,338 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-13 23:44:43,851 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:44:43,852 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 2 seconds
+
+2025-08-13 23:44:45,853 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:44:47,744 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:44:47,744 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 4 seconds
+
+2025-08-13 23:44:51,744 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:44:54,263 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:44:54,264 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 8 seconds
+
+2025-08-13 23:45:02,265 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:45:05,398 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:45:05,398 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 16 seconds
+
+2025-08-13 23:45:21,399 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:45:23,355 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:45:23,356 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 32 seconds
+
+2025-08-13 23:45:24,802 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:45:24 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:45:26,250 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:45:26 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:45:55,359 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:45:58,187 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:45:58,189 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 64 seconds
+
+2025-08-13 23:47:02,192 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:47:04,020 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:47:04,021 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 128 seconds
+
+2025-08-13 23:47:56,078 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:47:56 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:49:12,024 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:49:13,874 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:49:13,875 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 256 seconds
+
+2025-08-13 23:52:02,142 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:52:02 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:53:29,875 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-13 23:53:32,837 DEBG 'n8n' stdout output:
+Bad request - please check your parameters
+
+2025-08-13 23:53:32,839 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) did fail with error: "Bad request - please check your parameters" | retry in 512 seconds
+
+2025-08-13 23:57:54,375 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:57:54 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-13 23:59:30,645 DEBG 'nginx' stdout output:
+172.30.32.1 - - [13/Aug/2025:23:59:30 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:00:43,341 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:00:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:02:04,841 DEBG 'n8n' stdout output:
+Try to activate workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh)
+
+2025-08-14 00:02:07,182 DEBG 'n8n' stdout output:
+Activation of workflow "Carmen - Asistente" (Ftgsq9BSsPOKvezh) was successful!
+
+2025-08-14 00:06:54,775 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:06:54 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:40:19,342 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:40:19 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:42:04,507 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:42:04 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:44:36,368 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:44:36 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 00:48:59,737 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:00:48:59 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 09:15:47,873 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:09:15:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 09:15:48,081 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:09:15:48 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 10:20:47,432 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:10:20:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 10:25:15,144 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:10:25:15 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 13:14:16,387 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:13:14:16 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 18:23:00,400 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:18:23:00 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 20:15:10,038 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:20:15:10 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 20:15:10,259 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:20:15:10 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 20:19:56,565 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 20:20:37,805 DEBG 'n8n' stderr output:
+2025-08-14T23:20:37.804Z [Rudder] error: Response error code: ECONNRESET
+
+2025-08-14 20:21:18,101 DEBG 'n8n' stderr output:
+2025-08-14T23:21:18.100Z [Rudder] error: Response error code: ECONNRESET
+
+2025-08-14 20:56:51,261 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 21:02:37,074 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 21:08:04,874 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 21:36:49,563 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 21:38:48,385 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 22:32:30,061 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-14 22:35:28,109 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:22:35:28 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 22:40:14,373 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:22:40:14 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 22:40:57,214 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:22:40:57 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 22:41:14,931 DEBG 'nginx' stdout output:
+172.30.32.1 - - [14/Aug/2025:22:41:14 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-14 23:44:32,790 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-15 00:48:00,736 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:00 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:48:01,072 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:01 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:48:03,300 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:03 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:48:07,517 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:07 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:48:15,733 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:15 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:48:31,980 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:48:31 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:49:04,225 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:49:04 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:50:08,432 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:50:08 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 403 42 "-" "-"
+
+2025-08-15 00:51:30,087 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:51:30 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:51:30,303 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:51:30 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:51:30,518 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:51:30 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:56:00,227 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:56:00 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:56:45,769 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:56:45 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:57:20,571 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:57:20 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:58:47,752 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:58:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 00:59:43,227 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:00:59:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:01:54,223 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:01:54 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:03:33,735 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:03:33 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:04:16,947 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:04:16 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:04:33,621 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:04:33 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:04:56,296 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:04:56 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:05:41,964 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:05:41 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:06:25,688 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:06:25 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:08:14,448 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:08:14 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:08:59,689 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:08:59 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:09:40,086 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:09:40 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:10:25,574 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:10:25 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:11:29,399 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:11:29 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:12:55,307 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:12:55 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:13:27,917 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:13:27 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:15:37,813 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:15:37 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:16:23,036 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:16:23 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:17:45,487 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:17:45 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:18:10,769 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:18:10 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:18:54,626 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:18:54 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:19:56,036 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:19:56 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:20:47,239 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:20:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:21:26,245 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:21:26 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:22:43,130 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:22:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:23:26,012 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:23:26 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:24:08,791 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:24:08 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:25:33,120 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:25:33 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 01:30:04,631 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:01:30:04 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 08:08:37,611 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 08:14:11,804 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 08:16:06,690 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 08:28:13,468 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:08:28:13 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 08:28:13,662 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:08:28:13 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 08:28:13,880 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:08:28:13 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 09:31:56,674 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:09:31:56 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 11:02:52,396 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 11:05:19,276 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 11:33:39,585 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:11:33:39 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 14:48:50,011 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:14:48:50 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 14:50:12,737 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:14:50:12 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 16:02:27,885 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:16:02:27 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 20:17:47,035 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:20:17:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 20:45:24,965 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-15 21:26:43,366 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:21:26:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 21:26:43,585 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:21:26:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 22:05:05,636 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:22:05:05 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 22:28:42,426 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:22:28:42 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 22:29:17,995 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:22:29:17 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 22:29:51,488 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:22:29:51 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 22:31:55,311 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:22:31:55 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:39:17,406 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:39:17 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:40:20,916 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:40:20 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:42:54,926 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:42:54 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:44:32,796 DEBG 'n8n' stdout output:
+Pruning old insights data
+
+2025-08-15 23:47:06,775 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:47:06 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:48:11,654 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:48:11 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:49:18,105 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:49:18 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:49:47,366 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:49:47 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:50:18,323 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:50:18 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:52:43,091 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:52:43 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-15 23:53:17,266 DEBG 'nginx' stdout output:
+172.30.32.1 - - [15/Aug/2025:23:53:17 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 10:45:22,362 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:10:45:22 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 10:45:22,554 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:10:45:22 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 10:45:22,776 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:10:45:22 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 13:35:43,076 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 13:37:47,949 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 14:05:15,974 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:05:15 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:08:00,297 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 14:12:38,115 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 14:22:12,409 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:22:12 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:35:33,847 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:35:33 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:36:07,201 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:36:07 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:37:38,160 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:37:38 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:38:48,278 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:14:38:48 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 14:53:35,692 DEBG 'n8n' stdout output:
+Community package installed: n8n-nodes-htmlcsstoimage
+
+2025-08-16 15:09:19,495 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:15:09:19 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 15:42:27,014 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-base.x
+
+2025-08-16 15:42:52,007 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-base.x
+
+2025-08-16 15:44:13,586 DEBG 'n8n' stdout output:
+Unexpected token '�', "���� JFIF"... is not valid JSON
+
+2025-08-16 15:45:04,181 DEBG 'n8n' stdout output:
+Unexpected token '�', "���� JFIF"... is not valid JSON
+
+2025-08-16 15:47:25,979 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-base.x
+
+2025-08-16 15:47:29,588 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-base.x
+
+2025-08-16 15:53:06,718 DEBG 'n8n' stdout output:
+Unrecognized node type: n8n-nodes-base.x
+
+2025-08-16 16:10:27,649 DEBG 'n8n' stdout output:
+Cannot read properties of undefined (reading 'fileName')
+
+2025-08-16 16:48:32,124 DEBG 'nginx' stdout output:
+172.30.32.2 - - [16/Aug/2025:16:48:32 -0300] "GET / HTTP/1.1" 200 1004 "http://192.168.0.200:8123/6560bdea_hass-n8n" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+
+2025-08-16 16:48:47,997 DEBG 'nginx' stdout output:
+2025/08/16 16:48:47 [info] 22#22: *207 client 172.30.32.2 closed keepalive connection
+
+2025-08-16 16:51:18,196 WARN received SIGTERM indicating exit request
+2025-08-16 16:51:18,196 DEBG killing nginx (pid 9) with signal SIGTERM
+2025-08-16 16:51:18,196 INFO waiting for n8n, nginx to die
+2025-08-16 16:51:18,196 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 140299400568880 for <Subprocess at 140299400563360 with name nginx in state STOPPING> (stderr)>
+2025-08-16 16:51:18,197 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 140299409048304 for <Subprocess at 140299400563360 with name nginx in state STOPPING> (stdout)>
+2025-08-16 16:51:18,197 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-16 16:51:18,197 DEBG received SIGCHLD indicating a child quit
+2025-08-16 16:51:18,197 DEBG killing n8n (pid 8) with signal SIGTERM
+2025-08-16 16:51:18,198 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-16 16:51:18,199 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 16:51:18,272 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 16:51:18,275 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-16 16:51:18,278 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-16 16:51:18,289 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-16 16:51:18,344 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 140299404016624 for <Subprocess at 140299400410512 with name n8n in state STOPPING> (stdout)>
+2025-08-16 16:51:18,345 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 140299403902032 for <Subprocess at 140299400410512 with name n8n in state STOPPING> (stderr)>
+2025-08-16 16:51:18,345 INFO stopped: n8n (exit status 0)
+2025-08-16 16:51:18,345 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-16 16:51:19,016 INFO Set uid to user 0 succeeded
+2025-08-16 16:51:19,019 INFO supervisord started with pid 7
+2025-08-16 16:51:20,025 INFO spawned: 'n8n' with pid 8
+2025-08-16 16:51:20,031 INFO spawned: 'nginx' with pid 9
+2025-08-16 16:51:20,061 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-16 16:51:20,062 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-16 16:51:20,063 DEBG 'n8n' stdout output:
+exported NODE_FUNCTIONAL_ALLOW_EXTERNAL=n8n-nodes-convert-image
+
+2025-08-16 16:51:20,064 DEBG 'n8n' stdout output:
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-16 16:51:20,071 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.08.1","homeassistant":"2025.8.2","hassos":"16.1","docker":"28.3.3","hostname":"homeassistant","operating_system":"Home Assistant OS 16.1","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-16 16:51:20,076 DEBG 'nginx' stdout output:
+2025/08/16 16:51:20 [notice] 14#14: using the "epoll" event method
+2025/08/16 16:51:20 [notice] 14#14: nginx/1.28.0
+
+2025-08-16 16:51:20,076 DEBG 'nginx' stdout output:
+2025/08/16 16:51:20 [notice] 14#14: OS: Linux 6.12.41-haos
+2025/08/16 16:51:20 [notice] 14#14: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-16 16:51:20,078 DEBG 'nginx' stdout output:
+2025/08/16 16:51:20 [notice] 14#14: start worker processes
+
+2025-08-16 16:51:20,078 DEBG 'nginx' stdout output:
+2025/08/16 16:51:20 [notice] 14#14: start worker process 34
+
+2025-08-16 16:51:20,080 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/config/www","/media"],"allowlist_external_urls":[],"components":["persistent_notification","counter","tuya.climate","zone","system_health","tuya.number","person","tag","tplink.light","androidtv_remote","tplink.fan","hacs.update","webhook","tuya.sensor","switch_as_x.light","blueprint","switch","sensor","device_automation","tasmota.light","usb","mjpeg","ping","localtuya.switch","backup.event","search","go2rtc","humidifier","tuya.switch","camera","webostv.media_player","logger","tuya.camera","tplink.siren","media_source","webostv","ollama.ai_task","input_select","tuya.scene","tasmota.fan","ping.device_tracker","scene","hassio.binary_sensor","event","stream","binary_sensor","energy.sensor","zeroconf","ollama.conversation","ipp.sensor","tuya.cover","tuya.alarm_control_panel","tplink.sensor","network","rest_command","python_script","default_config","tplink","device_tracker","mobile_app.device_tracker","ai_task","upnp.sensor","websocket_api","assist_pipeline","ps4","androidtv_remote.remote","media_player","energy","http","generic_thermostat.climate","template.sensor","ping.sensor","tuya.select","conversation","tasmota","api","tuya.siren","upnp.binary_sensor","tuya.event","generic.camera","backup","hacs","tasmota.switch","tplink.select","tplink.camera","vacuum","cloud.stt","image_upload","radio_browser","homeassistant.scene","wyoming","tuya.binary_sensor","ffmpeg","ssdp","mqtt","mqtt.switch","weather","intent","timer","climate","met","webostv.notify","tuya.fan","tplink.number","button","sun.binary_sensor","bluetooth","tplink.binary_sensor","history","hassio.sensor","mobile_app.notify","tuya.humidifier","tuya.vacuum","tplink.switch","cast.media_player","onboarding","ollama","repairs","script","system_log","hacs.switch","input_text","template","cover","select","stt","mqtt.sensor","localtuya","trace","light","tuya.button","assist_satellite","sun.sensor","met.weather","switch_as_x","ipp","my","androidtv_remote.media_player","ps4.media_player","mjpeg.camera","alarm_control_panel","homeassistant","tasmota.binary_sensor","config","recorder","cast","notify","generic","ping.binary_sensor","mobile_app.sensor","tplink.climate","wake_word","auth","backup.sensor","tuya","upnp","schedule","tasmota.cover","hardware","siren","file_upload","input_datetime","mobile_app","hassio.update","sun","tts","analytics","automation","mobile_app.binary_sensor","tuya.light","diagnostics","lovelace","tasmota.sensor","google_translate.tts","input_boolean","generic_thermostat","tplink.vacuum","hassio","input_button","application_credentials","dhcp","cloud","cloud.binary_sensor","frontend","input_number","number","tplink.button","homeassistant_alerts","cloud.tts","remote","fan","update","logbook"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.8.2","whitelist_external_dirs":["/config/www","/media"]}
+
+2025-08-16 16:51:20,087 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list:\n  - \"WEBHOOK_URL: <value here>\"\n  - \"EXTERNAL_URL: <value here>\"\n  - \"OTHER_ENVIRONMENT_VARIABLE_OF_YOUR_CHOICE: <value here>\"\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.11","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/","NODE_FUNCTIONAL_ALLOW_EXTERNAL: n8n-nodes-convert-image"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.11","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-16 16:51:20,092 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-16 16:51:20,101 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-16 16:51:20,107 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-08-16 16:51:20,108 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-16 16:51:20,684 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-16 16:51:21,685 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-16 16:51:21,685 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-16 16:51:23,512 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-16 16:51:23,881 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-16 16:51:23,922 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-16 16:51:24,021 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-16 16:51:26,157 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (rcRrDQ8nhhET32NJdxfFP) 
+
+2025-08-16 16:51:26,582 DEBG 'n8n' stdout output:
+Currently active workflows:
+
+2025-08-16 16:51:26,583 DEBG 'n8n' stdout output:
+   - Ines - Contadora (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-16 16:51:26,583 DEBG 'n8n' stdout output:
+   - Carmen - Asistente (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-16 16:51:26,583 DEBG 'n8n' stdout output:
+   - YA_ChannelDog (ID: BPox329nF76VCcJo)
+
+2025-08-16 16:51:26,584 DEBG 'n8n' stdout output:
+   - SolanaTrendingTokens (ID: BJILgey6xyMQwcKM)
+
+2025-08-16 16:51:26,585 DEBG 'n8n' stdout output:
+   - YA_DailyFetcher (ID: xruk8XvWbDaTTnTS)
+
+2025-08-16 16:51:26,585 DEBG 'n8n' stdout output:
+   - YA_AskDB (ID: oCpTGlzoIckiYUxf)
+
+2025-08-16 16:51:26,593 DEBG 'n8n' stdout output:
+[Recovery] Logs available, amended execution
+
+2025-08-16 16:51:27,250 DEBG 'n8n' stdout output:
+Found unfinished executions: 1285
+
+2025-08-16 16:51:27,250 DEBG 'n8n' stdout output:
+This could be due to a crash of an active workflow or a restart of n8n
+
+2025-08-16 16:51:27,253 DEBG 'n8n' stdout output:
+Version: 1.105.4
+
+2025-08-16 16:51:27,273 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-16 16:51:28,266 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-16 16:51:28,873 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-16 16:51:28,997 DEBG 'n8n' stdout output:
+Activated workflow "YA_ChannelDog" (ID: BPox329nF76VCcJo)
+
+2025-08-16 16:51:29,702 DEBG 'n8n' stdout output:
+Activated workflow "SolanaTrendingTokens" (ID: BJILgey6xyMQwcKM)
+
+2025-08-16 16:51:29,734 DEBG 'n8n' stdout output:
+Activated workflow "YA_DailyFetcher" (ID: xruk8XvWbDaTTnTS)
+
+2025-08-16 16:51:30,442 DEBG 'n8n' stdout output:
+Activated workflow "YA_AskDB" (ID: oCpTGlzoIckiYUxf)
+
+2025-08-16 16:51:30,443 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-16 16:57:57,972 WARN received SIGTERM indicating exit request
+2025-08-16 16:57:57,972 DEBG killing nginx (pid 9) with signal SIGTERM
+2025-08-16 16:57:57,973 INFO waiting for n8n, nginx to die
+2025-08-16 16:57:57,974 DEBG fd 13 closed, stopped monitoring <POutputDispatcher at 139770874305600 for <Subprocess at 139770878105056 with name nginx in state STOPPING> (stderr)>
+2025-08-16 16:57:57,974 DEBG fd 9 closed, stopped monitoring <POutputDispatcher at 139770874147184 for <Subprocess at 139770878105056 with name nginx in state STOPPING> (stdout)>
+2025-08-16 16:57:57,975 WARN stopped: nginx (terminated by SIGTERM)
+2025-08-16 16:57:57,975 DEBG received SIGCHLD indicating a child quit
+2025-08-16 16:57:57,976 DEBG killing n8n (pid 8) with signal SIGTERM
+2025-08-16 16:57:57,977 DEBG 'n8n' stdout output:
+Received SIGTERM. Shutting down...
+
+2025-08-16 16:57:57,978 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 16:57:58,032 DEBG 'n8n' stdout output:
+Deregistered all crons for workflow
+
+2025-08-16 16:57:58,034 DEBG 'n8n' stdout output:
+[Task Runner]: Received SIGTERM signal, shutting down...
+
+2025-08-16 16:57:58,037 DEBG 'n8n' stdout output:
+[Task Runner]: Task runner stopped
+
+2025-08-16 16:57:58,046 DEBG 'n8n' stdout output:
+
+Stopping n8n...
+
+2025-08-16 16:57:58,070 DEBG fd 6 closed, stopped monitoring <POutputDispatcher at 139770879593360 for <Subprocess at 139770874147280 with name n8n in state STOPPING> (stdout)>
+2025-08-16 16:57:58,070 DEBG fd 8 closed, stopped monitoring <POutputDispatcher at 139770877737584 for <Subprocess at 139770874147280 with name n8n in state STOPPING> (stderr)>
+2025-08-16 16:57:58,070 INFO stopped: n8n (exit status 0)
+2025-08-16 16:57:58,070 DEBG received SIGCHLD indicating a child quit
+/usr/lib/python3.12/site-packages/supervisor/options.py:13: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+2025-08-16 16:57:58,711 INFO Set uid to user 0 succeeded
+2025-08-16 16:57:58,714 INFO supervisord started with pid 7
+2025-08-16 16:57:59,716 INFO spawned: 'n8n' with pid 8
+2025-08-16 16:57:59,718 INFO spawned: 'nginx' with pid 9
+2025-08-16 16:57:59,750 DEBG 'n8n' stdout output:
+exported N8N_PATH=/
+
+2025-08-16 16:57:59,752 DEBG 'n8n' stdout output:
+exported WEBHOOK_URL=https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-16 16:57:59,753 DEBG 'nginx' stdout output:
+2025/08/16 16:57:59 [notice] 15#15: using the "epoll" event method
+2025/08/16 16:57:59 [notice] 15#15: nginx/1.28.0
+2025/08/16 16:57:59 [notice] 15#15: OS: Linux 6.12.41-haos
+2025/08/16 16:57:59 [notice] 15#15: getrlimit(RLIMIT_NOFILE): 1024:524288
+
+2025-08-16 16:57:59,754 DEBG 'n8n' stdout output:
+exported NODE_FUNCTIONAL_ALLOW_EXTERNAL=n8n-nodes-convert-image
+N8N_USER_FOLDER: /data/n8n
+
+2025-08-16 16:57:59,755 DEBG 'nginx' stdout output:
+2025/08/16 16:57:59 [notice] 15#15: start worker processes
+
+2025-08-16 16:57:59,756 DEBG 'nginx' stdout output:
+2025/08/16 16:57:59 [notice] 15#15: start worker process 32
+
+2025-08-16 16:57:59,760 DEBG 'n8n' stdout output:
+Fetched Info from Supervisor: {"result":"ok","data":{"supervisor":"2025.08.1","homeassistant":"2025.8.2","hassos":"16.1","docker":"28.3.3","hostname":"homeassistant","operating_system":"Home Assistant OS 16.1","features":["reboot","shutdown","services","network","hostname","timedate","os_agent","haos","resolved","journal","disk","mount"],"machine":"generic-x86-64","machine_id":"12ecc1b359ed471dbe092f9ae122935d","arch":"amd64","state":"running","supported_arch":["amd64","i386"],"supported":true,"channel":"stable","logging":"info","timezone":"America/Montevideo"}}
+
+2025-08-16 16:57:59,771 DEBG 'n8n' stdout output:
+Fetched Config from Supervisor: {"allowlist_external_dirs":["/config/www","/media"],"allowlist_external_urls":[],"components":["persistent_notification","counter","tuya.climate","zone","system_health","tuya.number","person","tag","tplink.light","androidtv_remote","tplink.fan","hacs.update","webhook","tuya.sensor","switch_as_x.light","blueprint","switch","sensor","device_automation","tasmota.light","usb","mjpeg","ping","localtuya.switch","backup.event","search","go2rtc","humidifier","tuya.switch","camera","webostv.media_player","logger","tuya.camera","tplink.siren","media_source","webostv","ollama.ai_task","input_select","tuya.scene","tasmota.fan","ping.device_tracker","scene","hassio.binary_sensor","event","stream","binary_sensor","energy.sensor","zeroconf","ollama.conversation","ipp.sensor","tuya.cover","tuya.alarm_control_panel","tplink.sensor","network","rest_command","python_script","default_config","tplink","device_tracker","mobile_app.device_tracker","ai_task","upnp.sensor","websocket_api","assist_pipeline","ps4","androidtv_remote.remote","media_player","energy","http","generic_thermostat.climate","template.sensor","ping.sensor","tuya.select","conversation","tasmota","api","tuya.siren","upnp.binary_sensor","tuya.event","generic.camera","backup","hacs","tasmota.switch","tplink.select","tplink.camera","vacuum","cloud.stt","image_upload","radio_browser","homeassistant.scene","wyoming","tuya.binary_sensor","ffmpeg","ssdp","mqtt","mqtt.switch","weather","intent","timer","climate","met","webostv.notify","tuya.fan","tplink.number","button","sun.binary_sensor","bluetooth","tplink.binary_sensor","history","hassio.sensor","mobile_app.notify","tuya.humidifier","tuya.vacuum","tplink.switch","cast.media_player","onboarding","ollama","repairs","script","system_log","hacs.switch","input_text","template","cover","select","stt","mqtt.sensor","localtuya","trace","light","tuya.button","assist_satellite","sun.sensor","met.weather","switch_as_x","ipp","my","androidtv_remote.media_player","ps4.media_player","mjpeg.camera","alarm_control_panel","homeassistant","tasmota.binary_sensor","config","recorder","cast","notify","generic","ping.binary_sensor","mobile_app.sensor","tplink.climate","wake_word","auth","backup.sensor","tuya","upnp","schedule","tasmota.cover","hardware","siren","file_upload","input_datetime","mobile_app","hassio.update","sun","tts","analytics","automation","mobile_app.binary_sensor","tuya.light","diagnostics","lovelace","tasmota.sensor","google_translate.tts","input_boolean","generic_thermostat","tplink.vacuum","hassio","input_button","application_credentials","dhcp","cloud","cloud.binary_sensor","frontend","input_number","number","tplink.button","homeassistant_alerts","cloud.tts","remote","fan","update","logbook"],"config_dir":"/config","config_source":"storage","country":"UY","currency":"UYU","debug":false,"elevation":0,"external_url":"https://elvergel.duckdns.org","internal_url":"http://192.168.0.200:8123","language":"es","latitude":-34.88149522688449,"location_name":"Casa","longitude":-55.25144577026368,"radius":100,"recovery_mode":false,"safe_mode":false,"state":"RUNNING","time_zone":"America/Montevideo","unit_system":{"length":"km","accumulated_precipitation":"mm","area":"m²","mass":"g","pressure":"Pa","temperature":"°C","volume":"L","wind_speed":"m/s"},"version":"2025.8.2","whitelist_external_dirs":["/config/www","/media"]}
+
+2025-08-16 16:57:59,778 DEBG 'n8n' stdout output:
+Fetched Add-on Info from Supervisor: {"result":"ok","data":{"name":"n8n","slug":"6560bdea_hass-n8n","hostname":"6560bdea-hass-n8n","dns":["6560bdea-hass-n8n.local.hass.io"],"description":"Self host your n8n instance","long_description":"# What is n8n?\n\nn8n (pronounced n-eight-n) helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code. It is an easy to use, user-friendly and highly customizable service, which uses an intuitive user interface for you to design your unique workflows very fast. Hosted on your server and not based in the cloud, it keeps your sensible data very secure in your own trusted database.\n\n# Installation\n\nTo install, click the button below:\n\n[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=6560bdea_hass-n8n&repository_url=https%3A%2F%2Fgithub.com%2FRbillon59%2Fhass-n8n)\n\nOr, follow these steps to get the add-on installed on your system:\n\n**Important:** Make sure you've added this addon repository to your Home Assistant addon library: https://github.com/Rbillon59/hass-n8n\n\n1. Navigate in your Home Assistant frontend to **Supervisor** -> **Add-on Store**.\n2. Find the \"hass-n8n\" add-on and click it.\n3. Click on the \"INSTALL\" button.\n\n# Configuration\n```yaml\ntimezone: Europe/Berlin\nenv_vars_list:\n  - \"WEBHOOK_URL: <value here>\"\n  - \"EXTERNAL_URL: <value here>\"\n  - \"OTHER_ENVIRONMENT_VARIABLE_OF_YOUR_CHOICE: <value here>\"\ncmd_line_args: \"\"\n```\n\n## Option: `env_vars_list` (required)\nList of the n8n environment variables. You can add as many environment variables as you want to the list through the UI. The format is the following:\n\n`SOME_ENVIRONMENT_VARIABLE: some-value` (the regular expression is `^[A-Z_0-9]+: .*$` )\n\nAll the available environment variables are available here : <https://docs.n8n.io/hosting/environment-variables/environment-variables/>\n\n## Option: `cmd_line_args` (optional)\nThe command line to start n8n. If you want to use a custom command line, you can use this variable.\n\n## Installing external packages\nIn n8n you can add external node modules by setting the `NODE_FUNCTION_ALLOW_EXTERNAL` environment variable with the list of npm packages you need.\n\nFor example, to install the `lodash` and the `moment` packages, in the UI, set the `env_vars_list` variable to:\n\n```txt\nNODE_FUNCTION_ALLOW_EXTERNAL: lodash,moment\n```\n\n## Setting up external access\nThe addon is presented via a [Home Assistant Ingress](https://www.home-assistant.io/blog/2019/04/15/hassio-ingress/) for additional security. \n\nThis means that in addition to n8n's credentials, n8n can't be accessed without being authenticated with Home Assistant as well, even when accessing it remotely.\n\n### Nabu Casa remote URL\nIf you use Nabu Casa remote URL, the addon can't fetch your Nabu Casa remote URL programmatically, in that case, you need to set the `EXTERNAL_URL` environment variable to your Nabu Casa remote URL for things like OAuth2 credentials to work properly (setting the right redirect URLs).\n\n### Manual external URL\nIf you are using a manual external URL, Ingress traffic is not relayed via this in a safe manner. In that case, you need to expose port `5678` of the container to a certain port (for instance, `5678`) on Home Assistant, under the \"Network\" section of the configuration tab of the addon.\n\n### Webhooks, triggers and n8n API\nWebhooks, triggers and the n8n API can't go via an Ingress, since having Home Assistant authentication on top of it would break the webhook (they need to be publically accessible and unauthenticated). \n\nFor this reason, the addon exposes all webhook or API traffic on port `8081`.\n\nFor the n8n API, webhooks and some webhook-based triggers to work properly, you need to open up a tunnel for port `8081` to the internet via the [Cloudflared addon](https://github.com/brenner-tobias/addon-cloudflared) or something similar. \n\nWhen done, set the `WEBHOOK_URL` environment variable to the URL of the tunnel.\n\n### Bypassing Home Assistant Ingress entirely (not recommended)\nIf you want to, you can expose n8n without requiring to go through the Ingress. This is done in the \"ports\" section of the \"configuration\" tab of the addon, for port `5678`. Note that you need to enable \"hidden port bindings\" for that port to show up. It is not exposed by default.\n\n# How to use it?\nJust start the addon and head to the addon's web UI.\n\n## Useful ressources\n\n### n8n documentation\n<https://docs.n8n.io>\n<https://docs.n8n.io/getting-started/tutorials.html>\n\n### Community public workflows\n<https://n8n.io/workflows>\n\n### Available integrations\n<https://n8n.io/integrations>\n\n## License\nThis addon is published under the Apache 2 license. Original author of the addon's bundled software is n8n.\n\n# Troubleshooting\nGot questions?\n\nYou can open an issue on GitHub.\n\nRepository: <https://github.com/Rbillon59/hass-n8n>\n\n## `401: Unauthorized` in popup-window when trying to set up OAuth-based credential\nThis can happen depending on which browser you are using. To work around it, copy the URL of the popup window and paste it into a new tab in the main window. Then the authorization will complete.\n","advanced":false,"stage":"stable","repository":"6560bdea","version_latest":"4.2.11","protected":true,"rating":7,"boot_config":"auto","boot":"auto","options":{"timezone":"America/Montevideo","env_vars_list":["N8N_PATH: /","WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/","NODE_FUNCTIONAL_ALLOW_EXTERNAL: n8n-nodes-convert-image"],"cmd_line_args":""},"schema":[{"name":"timezone","required":true,"type":"string"},{"name":"env_vars_list","multiple":true,"required":true,"type":"string"},{"name":"cmd_line_args","optional":true,"type":"string"}],"arch":["aarch64","amd64"],"machine":[],"homeassistant":null,"url":"https://github.com/Rbillon59/hass-n8n","detached":false,"available":true,"build":false,"network":{"5678/tcp":5678,"8081/tcp":8081},"network_description":{"5678/tcp":"The port for all n8n traffic. Normally not exposed, as Home Assistant Ingress is more secure and is recommended. You may expose this port if you want to bypass the Ingress (not recommended for security reasons). See the documentation for more information.","8081/tcp":"The port for n8n webhook and API-related traffic. Use this to allow running under Home Assistant Ingress while still allowing certain public communication channels to go through and function. See the documentation for more information."},"host_network":false,"host_pid":false,"host_ipc":false,"host_uts":false,"host_dbus":false,"privileged":[],"full_access":false,"apparmor":"default","icon":true,"logo":true,"changelog":true,"documentation":false,"stdin":false,"hassio_api":true,"hassio_role":"default","auth_api":false,"homeassistant_api":true,"gpio":false,"usb":false,"uart":false,"kernel_modules":false,"devicetree":false,"udev":false,"docker_api":false,"video":false,"audio":false,"startup":"application","services":[],"discovery":[],"translations":{},"ingress":true,"signed":false,"state":"started","webui":"http://[HOST]:5690/","ingress_entry":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4","ingress_url":"/api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/","ingress_port":5690,"ingress_panel":true,"audio_input":null,"audio_output":null,"auto_update":true,"ip_address":"172.30.33.8","version":"4.2.11","update_available":false,"watchdog":true,"devices":[],"system_managed":false,"system_managed_config_entry":null}}
+
+2025-08-16 16:57:59,783 DEBG 'n8n' stdout output:
+Extracted Ingress Path from Supervisor: /api/hassio_ingress/c8IUY2F1Hb3Lx0K-e45Y89H5PzeQpQyFf7hSnyZvFj4/
+
+2025-08-16 16:57:59,792 DEBG 'n8n' stdout output:
+Local Home Assistant n8n URL: http://homeassistant:5690
+
+2025-08-16 16:57:59,799 DEBG 'n8n' stdout output:
+External Home Assistant n8n URL: https://elvergel.duckdns.org
+
+2025-08-16 16:57:59,799 DEBG 'n8n' stdout output:
+N8N_PATH: /
+N8N_EDITOR_BASE_URL: https://elvergel.duckdns.org/
+
+2025-08-16 16:57:59,799 DEBG 'n8n' stdout output:
+WEBHOOK_URL: https://elvergel.duckdns.org/n8nwebhook/
+
+2025-08-16 16:58:00,376 DEBG 'n8n' stderr output:
+Invalid value for N8N_PROTOCOL - Invalid enum value. Expected 'http' | 'https', received ''. Falling back to default value.
+
+2025-08-16 16:58:01,377 INFO success: n8n entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-16 16:58:01,377 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-08-16 16:58:03,219 DEBG 'n8n' stdout output:
+Initializing n8n process
+
+2025-08-16 16:58:03,614 DEBG 'n8n' stdout output:
+n8n ready on ::, port 5678
+
+2025-08-16 16:58:03,661 DEBG 'n8n' stdout output:
+n8n Task Broker ready on 127.0.0.1, port 5679
+
+2025-08-16 16:58:03,756 DEBG 'n8n' stdout output:
+[license SDK] Skipping renewal on init: license cert is not initialized
+
+2025-08-16 16:58:05,923 DEBG 'n8n' stdout output:
+Registered runner "JS Task Runner" (1JbCx9AgXvj0u4AElC4UD) 
+
+2025-08-16 16:58:06,174 DEBG 'n8n' stdout output:
+Currently active workflows:
+
+2025-08-16 16:58:06,175 DEBG 'n8n' stdout output:
+   - Ines - Contadora (ID: 9Pg5NpfqNYYengOd)
+   - Carmen - Asistente (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-16 16:58:06,176 DEBG 'n8n' stdout output:
+   - YA_ChannelDog (ID: BPox329nF76VCcJo)
+
+2025-08-16 16:58:06,177 DEBG 'n8n' stdout output:
+   - SolanaTrendingTokens (ID: BJILgey6xyMQwcKM)
+
+2025-08-16 16:58:06,177 DEBG 'n8n' stdout output:
+   - YA_DailyFetcher (ID: xruk8XvWbDaTTnTS)
+   - YA_AskDB (ID: oCpTGlzoIckiYUxf)
+
+2025-08-16 16:58:06,187 DEBG 'n8n' stdout output:
+[Recovery] Logs available, amended execution
+
+2025-08-16 16:58:06,819 DEBG 'n8n' stdout output:
+Found unfinished executions: 1285
+
+2025-08-16 16:58:06,820 DEBG 'n8n' stdout output:
+This could be due to a crash of an active workflow or a restart of n8n
+
+2025-08-16 16:58:06,821 DEBG 'n8n' stdout output:
+Version: 1.105.4
+
+2025-08-16 16:58:06,858 DEBG 'n8n' stdout output:
+Start Active Workflows:
+
+2025-08-16 16:58:07,837 DEBG 'n8n' stdout output:
+Activated workflow "Ines - Contadora" (ID: 9Pg5NpfqNYYengOd)
+
+2025-08-16 16:58:08,493 DEBG 'n8n' stdout output:
+Activated workflow "Carmen - Asistente" (ID: Ftgsq9BSsPOKvezh)
+
+2025-08-16 16:58:08,599 DEBG 'n8n' stdout output:
+Activated workflow "YA_ChannelDog" (ID: BPox329nF76VCcJo)
+
+2025-08-16 16:58:09,201 DEBG 'n8n' stdout output:
+Activated workflow "SolanaTrendingTokens" (ID: BJILgey6xyMQwcKM)
+
+2025-08-16 16:58:09,227 DEBG 'n8n' stdout output:
+Activated workflow "YA_DailyFetcher" (ID: xruk8XvWbDaTTnTS)
+
+2025-08-16 16:58:09,890 DEBG 'n8n' stdout output:
+Activated workflow "YA_AskDB" (ID: oCpTGlzoIckiYUxf)
+
+2025-08-16 16:58:09,891 DEBG 'n8n' stdout output:
+
+Editor is now accessible via:
+https://elvergel.duckdns.org
+
+2025-08-16 17:03:22,085 DEBG 'n8n' stdout output:
+Community package installed: n8n-nodes-convert-image
+
+2025-08-16 17:58:37,820 DEBG 'n8n' stdout output:
+Error loading package "n8n-nodes-html2image" :The specified package could not be loaded
+Cause: Cannot find module '/data/n8n/.n8n/nodes/node_modules/n8n-nodes-html2image/dist/nodes/Html2ImageNode/Html2ImageNode.node.js'
+Require stack:
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/load-class-in-isolation.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/directory-loader.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/execution.repository.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/index.js
+- /usr/local/lib/node_modules/n8n/dist/commands/start.js
+- /usr/local/lib/node_modules/n8n/dist/command-registry.js
+ResponseError: Error loading package "n8n-nodes-html2image" :The specified package could not be loaded
+Cause: Cannot find module '/data/n8n/.n8n/nodes/node_modules/n8n-nodes-html2image/dist/nodes/Html2ImageNode/Html2ImageNode.node.js'
+Require stack:
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/load-class-in-isolation.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/directory-loader.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/execution.repository.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/index.js
+- /usr/local/lib/node_modules/n8n/dist/commands/start.js
+- /usr/local/lib/node_modules/n8n/dist/command-registry.js
+    at CommunityPackagesController.installPackage (/usr/local/lib/node_modules/n8n/src/controllers/community-packages.controller.ts:127:10)
+    at handler (/usr/local/lib/node_modules/n8n/src/controller.registry.ts:78:12)
+    at /usr/local/lib/node_modules/n8n/src/response-helper.ts:157:17
+
+
+2025-08-16 18:01:22,498 DEBG 'n8n' stdout output:
+Error loading package "n8n-nodes-html2image" :The specified package could not be loaded
+Cause: Cannot find module '/data/n8n/.n8n/nodes/node_modules/n8n-nodes-html2image/dist/nodes/Html2ImageNode/Html2ImageNode.node.js'
+Require stack:
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/load-class-in-isolation.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/directory-loader.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/execution.repository.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/index.js
+- /usr/local/lib/node_modules/n8n/dist/commands/start.js
+- /usr/local/lib/node_modules/n8n/dist/command-registry.js
+ResponseError: Error loading package "n8n-nodes-html2image" :The specified package could not be loaded
+Cause: Cannot find module '/data/n8n/.n8n/nodes/node_modules/n8n-nodes-html2image/dist/nodes/Html2ImageNode/Html2ImageNode.node.js'
+Require stack:
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/load-class-in-isolation.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/directory-loader.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/nodes-loader/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1.29_46e522f8a77ed5eccc0991bfcca21502/node_modules/n8n-core/dist/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/execution.repository.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/repositories/index.js
+- /usr/local/lib/node_modules/n8n/node_modules/.pnpm/@n8n+db@file+packages+@n8n+db_@opentelemetry+api@1.9.0_@opentelemetry+sdk-trace-base@1._cd36ea6afcefbcc83017981a3488f5e9/node_modules/@n8n/db/dist/index.js
+- /usr/local/lib/node_modules/n8n/dist/commands/start.js
+- /usr/local/lib/node_modules/n8n/dist/command-registry.js
+    at CommunityPackagesController.installPackage (/usr/local/lib/node_modules/n8n/src/controllers/community-packages.controller.ts:127:10)
+    at handler (/usr/local/lib/node_modules/n8n/src/controller.registry.ts:78:12)
+    at /usr/local/lib/node_modules/n8n/src/response-helper.ts:157:17
+
+
+2025-08-16 20:57:10,738 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:20:57:10 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+
+2025-08-16 20:58:25,307 DEBG 'nginx' stdout output:
+172.30.32.1 - - [16/Aug/2025:20:58:25 -0300] "POST /webhook/a87de2ab-c620-480a-803a-8566009a7b9e/webhook HTTP/1.0" 200 14 "-" "-"
+

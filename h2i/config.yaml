@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration
 name: "HTML-to-Image (H2I)"
 description: "A local service to convert HTML to images, based on bybetas/h2i."
-version: "1.0.0"
+version: "1.0.1"
 slug: "h2i"
 init: false
 arch:
@@ -10,3 +10,24 @@ ports:
   "80/tcp": 5005 # Exposes port 80 of the container to a configurable host port (default 5005)
 ports_description:
   "80/tcp": "Web interface for the image generation API."
+startup: application
+boot: auto
+webui: "http://[HOST]:[PORT:80]/"
+ingress: true
+ingress_port: 80
+panel_icon: "mdi:image-text"
+hassio_api: true
+homeassistant_api: true
+host_network: false
+options:
+  quality: 80
+  width: 800
+  height: 600
+  timeout: 30000
+  allow_external_access: true
+schema:
+  quality: "int(1,100)"
+  width: "int(50,4000)"
+  height: "int(50,4000)"
+  timeout: "int(1000,60000)"
+  allow_external_access: "bool"
