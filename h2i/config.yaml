@@ -1,7 +1,7 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration
 name: "HTML-to-Image (H2I)"
 description: "A local service to convert HTML to images, based on bybetas/h2i."
-version: "1.0.1"
+version: "1.0.2"
 slug: "h2i"
 init: false
 arch:

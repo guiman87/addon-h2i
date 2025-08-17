@@ -64,7 +64,7 @@ To use this addon with n8n:
 2. In your n8n workflow, add an HTTP Request node
 3. Configure the HTTP Request node as follows:
    - **Method**: POST
-   - **URL**: `http://homeassistant.local:5005` (or use your Home Assistant IP address)
+   - **URL**: `http://homeassistant:5005` (use the internal hostname)
    - **Headers**: Add Content-Type: application/json
    - **Body**: JSON object with at least the "html" property
    - **Response Format**: File
@@ -78,23 +78,19 @@ Example n8n HTTP Request Body:
 }
 ```
 
+> **Important Note for n8n**: When you get the error "The connection to the server was closed unexpectedly," try using the internal Home Assistant hostname `homeassistant` instead of `homeassistant.local` or an IP address. The internal Docker network should allow n8n to connect directly to the H2I service using this hostname.
+
 ## Troubleshooting
 
 ### Connection Issues from n8n
 
 If n8n reports "The connection to the server was closed unexpectedly":
 
-1. **Check direct connectivity**: Try accessing the H2I service directly using curl from your Home Assistant host:
-   ```bash
-   curl -v http://localhost:5005
-   ```
+1. **Use the internal hostname**: In your n8n HTTP Request node, try using `http://homeassistant:5005` instead of using the external hostname or IP address.
 
-2. **Use the IP address instead of hostname**: In your n8n HTTP Request node, try using the direct IP address of your Home Assistant instance instead of the hostname:
-   ```
-   http://192.168.x.x:5005
-   ```
+2. **Check logs**: View the logs of both the H2I addon and the n8n addon to see if there are any error messages.
 
-3. **Check if the addon is running**: Verify in Home Assistant that the H2I addon shows as "Running" and check its logs for any errors.
+3. **Verify addon is running**: Make sure the H2I addon shows as "Running" in Home Assistant.
 
 4. **Test with simple HTML**: Start with very simple HTML to rule out rendering issues:
    ```json
@@ -103,7 +99,7 @@ If n8n reports "The connection to the server was closed unexpectedly":
 
 5. **Increase timeout values**: Both in the addon configuration and in your n8n HTTP Request node, try increasing timeout values.
 
-6. **Check firewall settings**: Ensure your network allows connections between the n8n container and the H2I container.
+6. **Restart the addons**: Sometimes restarting both addons can resolve network connectivity issues.
 
 ### General Troubleshooting
 
@@ -112,4 +108,4 @@ If n8n reports "The connection to the server was closed unexpectedly":
 3. Try increasing the timeout value if your HTML is complex
 4. Check the addon logs for any error messages
 5. Ensure that the H2I container has proper network access
-6. Try restarting both n8n and H2I addons if you're experiencing connectivity issues
+6. If you're trying to include external resources (like images or fonts), make sure they're accessible from the container

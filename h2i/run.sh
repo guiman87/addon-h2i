@@ -21,48 +21,77 @@ bashio::log.info "Default Height: ${HEIGHT}px"
 bashio::log.info "Timeout: ${TIMEOUT}ms"
 bashio::log.info "Allow External Access: ${ALLOW_EXTERNAL}"
 
+# Display basic system info
+bashio::log.info "System information:"
+uname -a || true
+bashio::log.info "Node.js version:"
+node --version || true
+bashio::log.info "NPM version:"
+npm --version || true
+
 # Display network information for debugging
 bashio::log.info "Network configuration:"
-ip addr show
+hostname -I || true
+ip addr show || true
 
-# Test if we can reach Home Assistant
-bashio::log.info "Testing connection to Home Assistant:"
-if ping -c 1 homeassistant.local &> /dev/null; then
-    bashio::log.info "Successfully pinged homeassistant.local"
+# Get the container's IP address (try different methods)
+if command -v hostname >/dev/null 2>&1; then
+    CONTAINER_IP=$(hostname -I | awk '{print $1}')
+    bashio::log.info "Container IP (hostname): ${CONTAINER_IP}"
+elif command -v ip >/dev/null 2>&1; then
+    CONTAINER_IP=$(ip addr show | grep -E "inet .* scope global" | awk '{print $2}' | cut -d/ -f1 | head -n 1)
+    bashio::log.info "Container IP (ip command): ${CONTAINER_IP}"
 else
-    bashio::log.warning "Could not ping homeassistant.local - trying supervisor"
-    if ping -c 1 supervisor &> /dev/null; then
-        bashio::log.info "Successfully pinged supervisor"
-    else
-        bashio::log.warning "Could not ping supervisor either"
-    fi
+    bashio::log.warning "Could not determine container IP address"
 fi
 
-# Get the container's IP address
-CONTAINER_IP=$(ip addr show | grep -E "inet .* scope global" | awk '{print $2}' | cut -d/ -f1 | head -n 1)
-bashio::log.info "Container IP: ${CONTAINER_IP}"
-
-# Start the HTML-to-Image service
-bashio::log.info "Starting the HTML-to-Image service..."
-
-# Check if the original entrypoint script exists
+# Examine the base image to understand how it starts
+bashio::log.info "Checking for original entrypoint:"
 if [ -f "/app/index.js" ]; then
-    bashio::log.info "Found /app/index.js - starting service"
+    bashio::log.info "Found /app/index.js"
+    # Look at the package.json to see how the service is supposed to start
+    if [ -f "/app/package.json" ]; then
+        bashio::log.info "Found package.json, checking start command:"
+        grep -A 5 '"scripts"' /app/package.json || true
+    fi
+else
+    # Try to find the starting point
+    bashio::log.info "Searching for index.js files:"
+    find / -name "index.js" -type f 2>/dev/null | head -n 10 || true
+    
+    # Check for package.json files
+    bashio::log.info "Searching for package.json files:"
+    find / -name "package.json" -type f 2>/dev/null | head -n 10 || true
+fi
+
+# Look for docker-entrypoint.sh or similar
+bashio::log.info "Searching for entrypoint scripts:"
+find / -name "*entrypoint*" -type f 2>/dev/null | head -n 10 || true
+
+# Try to determine the correct command to start the service
+if [ -f "/app/index.js" ]; then
+    bashio::log.info "Starting service with node /app/index.js"
     
     # We'll run with more verbose logging and catch any errors
-    node /app/index.js 2>&1 | bashio::log.info
+    cd /app && node index.js 2>&1 | bashio::log.info
+elif [ -f "/usr/src/app/index.js" ]; then
+    bashio::log.info "Starting service with node /usr/src/app/index.js"
+    
+    cd /usr/src/app && node index.js 2>&1 | bashio::log.info
 else
-    bashio::log.error "Could not find /app/index.js"
-    # Let's try to list what's in the app directory
-    bashio::log.info "Contents of /app directory:"
-    ls -la /app
-    
-    # Try to find any index.js files
-    bashio::log.info "Searching for index.js files:"
-    find / -name "index.js" -type f 2>/dev/null | head -n 10
-    
-    # If we still can't find it, exit with an error
-    exit 1
+    # Try to find any default entrypoint in the container
+    if [ -f "/docker-entrypoint.sh" ]; then
+        bashio::log.info "Found /docker-entrypoint.sh, executing:"
+        /docker-entrypoint.sh 2>&1 | bashio::log.info
+    elif [ -f "/entrypoint.sh" ]; then
+        bashio::log.info "Found /entrypoint.sh, executing:"
+        /entrypoint.sh 2>&1 | bashio::log.info
+    else
+        bashio::log.error "Could not find a way to start the service"
+        bashio::log.info "Contents of root directory:"
+        ls -la / || true
+        exit 1
+    fi
 fi
 
 # If we get here, something went wrong
