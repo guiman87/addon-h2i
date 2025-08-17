@@ -1,0 +1,51 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start h2i service
+# ==============================================================================
+
+# Set configuration
+export H2I_HOST=0.0.0.0
+export H2I_ORIGINS=*
+
+# Set quality, dimensions and timeout from config
+QUALITY=$(bashio::config 'quality')
+WIDTH=$(bashio::config 'width')
+HEIGHT=$(bashio::config 'height')
+TIMEOUT=$(bashio::config 'timeout')
+ALLOW_EXTERNAL=$(bashio::config 'allow_external_access')
+
+# Set environment variables for h2i
+export H2I_QUALITY=${QUALITY}
+export H2I_DEFAULT_WIDTH=${WIDTH}
+export H2I_DEFAULT_HEIGHT=${HEIGHT}
+export H2I_TIMEOUT=${TIMEOUT}
+
+# Print startup message
+bashio::log.info "Starting HTML-to-Image service..."
+bashio::log.info "Quality: ${QUALITY}"
+bashio::log.info "Default Width: ${WIDTH}px"
+bashio::log.info "Default Height: ${HEIGHT}px"
+bashio::log.info "Timeout: ${TIMEOUT}ms"
+bashio::log.info "Allow External Access: ${ALLOW_EXTERNAL}"
+
+# Display network information
+CONTAINER_IP=$(hostname -I | awk '{print $1}')
+bashio::log.info "Container IP: ${CONTAINER_IP}"
+
+# Find the Node.js application entry point
+if [ -f "/app/index.js" ]; then
+    cd /app && node index.js
+elif [ -f "/usr/src/app/index.js" ]; then
+    cd /usr/src/app && node index.js
+else
+    # Try to find the main entry point
+    for entry_point in $(find / -name "index.js" -type f 2>/dev/null | grep -v "node_modules"); do
+        bashio::log.info "Found entry point: ${entry_point}"
+        cd $(dirname "${entry_point}") && node $(basename "${entry_point}")
+        exit $?
+    done
+    
+    # If we got here, we couldn't find a way to start the service
+    bashio::log.error "Could not find a way to start the H2I service"
+    exit 1
+fi

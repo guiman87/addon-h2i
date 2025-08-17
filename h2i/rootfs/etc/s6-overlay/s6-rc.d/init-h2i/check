@@ -1,0 +1,21 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Perform health check for H2I service
+# ==============================================================================
+
+PORT=80
+ENDPOINT="http://localhost:${PORT}"
+
+# Wait for service to start up
+for i in $(seq 1 30); do
+    if nc -z localhost ${PORT}; then
+        bashio::log.info "H2I service is up and running"
+        exit 0
+    fi
+    
+    bashio::log.info "Waiting for H2I service to start... ($i/30)"
+    sleep 1
+done
+
+bashio::log.error "H2I service failed to start within 30 seconds"
+exit 1

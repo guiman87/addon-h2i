@@ -6,3 +6,5 @@ labels:
   org.opencontainers.image.description: "A local service to convert HTML to images."
   org.opencontainers.image.source: "https://github.com/guiman87/addon-h2i"
   org.opencontainers.image.licenses: "Apache License 2.0"
+args:
+  H2I_VERSION: "latest"

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+echo "=== H2I Service Diagnostics ==="
+echo ""
+echo "Testing API endpoint..."
+curl -s -X POST \
+  http://localhost:80 \
+  -H 'Content-Type: application/json' \
+  -d '{"html": "<html><body><h1>Diagnostic Test</h1><p>If you can see this image, the service is working correctly.</p></body></html>"}' \
+  --output /tmp/diagnostic-test.jpg
+
+if [ -f "/tmp/diagnostic-test.jpg" ]; then
+  echo "✅ Successfully generated test image!"
+  echo "Image size: $(du -h /tmp/diagnostic-test.jpg | cut -f1)"
+else
+  echo "❌ Failed to generate test image"
+fi
+
+echo ""
+echo "Network information:"
+echo "Container IP: $(hostname -I | awk '{print $1}')"
+echo "Current connections to port 80:"
+netstat -tuln | grep ":80" || echo "No active connections found"
+
+echo ""
+echo "=== Environment Variables ==="
+env | grep "H2I_" || echo "No H2I_ environment variables found"
+
+echo ""
+echo "=== Service Status ==="
+ps aux | grep -E "node|index.js" | grep -v grep || echo "No node processes found"
+
+echo ""
+echo "For more detailed logs, check the addon logs in Home Assistant"

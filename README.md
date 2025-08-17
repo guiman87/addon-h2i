@@ -1,4 +1,53 @@
-# Home Assistant Add-on: HTML-to-Image (H2I)
+# Home Assistant Add-on: HTML-to-# Home Assistant Add-on: HTML-to-Image (H2I)
+
+![Supports amd64 Architecture][amd64-shield]
+
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+
+## About
+
+This Home Assistant add-on provides a local API service to convert HTML code into images. Based on the [bybetas/h2i](https://hub.docker.com/r/bybetas/h2i) Docker image, it offers a simple way to generate dynamic images from HTML content.
+
+Use cases:
+- Generate dynamic images for Home Assistant dashboards
+- Create visual representations of data
+- Generate image cards for notifications
+- Create charts and graphs as images
+- Integrate with automation workflows
+
+## How to use
+
+Send a POST request to the API endpoint with your HTML content:
+
+```bash
+curl -X POST 
+  http://homeassistant:5005 
+  -H 'Content-Type: application/json' 
+  -d '{"html": "<html><body><h1>Hello, World!</h1></body></html>"}' 
+  --output my-image.jpg
+```
+
+For more information about configuring and using this add-on, see the [documentation](./h2i/DOCS.md).
+
+## Installation
+
+1. Add this repository URL to your Home Assistant instance:
+   ```
+   https://github.com/guiman87/addon-h2i
+   ```
+2. Install the "HTML-to-Image (H2I)" add-on from the add-on store.
+3. Configure the add-on with your preferred settings.
+4. Start the add-on.
+
+## Support
+
+Got questions? Please visit the [Home Assistant community forum](https://community.home-assistant.io/).
+
+## License
+
+This add-on is licensed under Apache License 2.0.
+
+The H2I service (bybetas/h2i) may have its own licensing terms. Please refer to the [original project](https://github.com/bybetas/h2i) for more information.H2I)
 
 This Home Assistant add-on runs the `bybetas/h2i` service, which provides a simple, local API to convert HTML into images. It's designed to be used by other services on your network, such as n8n, for generating dynamic images from HTML code.
 

@@ -3,10 +3,28 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Copy our scripts - we won't try to chmod them
-COPY run.sh /
-COPY test_connection.sh /
-COPY diagnostics.sh /
+# Setup base
+WORKDIR /data
 
-# Use our script as the entry point, making sure it's executed through bash
-ENTRYPOINT ["/bin/bash", "/run.sh"]
+# Copy data
+COPY rootfs /
+
+# Required dependencies for Home Assistant addons
+RUN \
+    apk add --no-cache \
+    bash \
+    jq \
+    curl \
+    ca-certificates \
+    netcat-openbsd
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Set labels
+LABEL \
+    io.hass.name="HTML-to-Image (H2I)" \
+    io.hass.description="Convert HTML to images" \
+    io.hass.type="addon" \
+    io.hass.version=${BUILD_VERSION} \
+    maintainer="guiman87"
